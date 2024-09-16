@@ -12,8 +12,7 @@ export default {
     <main>
         <div class="container">
             <h1>
-            --> Content goes here <--
-            </h1>
+                --> Content goes here <-- </h1>
         </div>
     </main>
 </template>
@@ -24,5 +23,4 @@ main {
     color: #fff;
     padding: 5rem 0;
 }
-
 </style>

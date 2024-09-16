@@ -33,7 +33,7 @@ export default {
             return new URL(imgPath, import.meta.url).href;
         }
     }
-    
+
 }
 </script>
 
@@ -43,21 +43,21 @@ export default {
             <button type="button">SIGN-UP NOW!</button>
             <div class="social">
                 <h3>FOLLOW US</h3>
-                <img v-for="image in images" :src="getImagePath(`../assets/img/footer-${ image.imageUrl }.png`)" :alt="image.alt">
-                
+                <img v-for="image in images" :src="getImagePath(`../assets/img/footer-${image.imageUrl}.png`)"
+                    :alt="image.alt">
             </div>
         </div>
     </div>
-    
+
 </template>
 
 <style lang="scss" scoped>
-
 .footer-bottom {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     button {
         background-color: transparent;
         border: 2px solid dodgerblue;
@@ -65,6 +65,7 @@ export default {
         font-weight: 600;
         padding: .5rem;
     }
+
     .social {
         color: dodgerblue;
         display: flex;
@@ -72,6 +73,4 @@ export default {
         gap: 1rem;
     }
 }
-
-
 </style>

@@ -4,15 +4,15 @@ export default {
         return {
             currentIndex: 0,
             navbarLinks: [
-                {active: true, href: '#', text: 'Characters',},
-                {active: false, href: '#', text: 'Comics',},
-                {active: false, href: '#', text: 'Movies',},
-                {active: false, href: '#', text: 'TV',},
-                {active: false, href: '#', text: 'Games',},
-                {active: false, href: '#', text: 'Collectibles',},
-                {active: false, href: '#', text: 'Videos',},
-                {active: false, href: '#', text: 'News',},
-                {active: false, href: '#', text: 'Shop',}
+                { active: true, href: '#', text: 'Characters', },
+                { active: false, href: '#', text: 'Comics', },
+                { active: false, href: '#', text: 'Movies', },
+                { active: false, href: '#', text: 'TV', },
+                { active: false, href: '#', text: 'Games', },
+                { active: false, href: '#', text: 'Collectibles', },
+                { active: false, href: '#', text: 'Videos', },
+                { active: false, href: '#', text: 'News', },
+                { active: false, href: '#', text: 'Shop', }
             ]
         }
     },
@@ -33,7 +33,8 @@ export default {
         <nav>
             <ul>
                 <li v-for="(link, index) in navbarLinks">
-                    <a @click="setActiveLink(index)" :class="{ active: link.active }" :href="link.href"> {{ link.text.toUpperCase() }} </a>
+                    <a @click="setActiveLink(index)" :class="{ active: link.active }" :href="link.href"> {{
+                        link.text.toUpperCase() }} </a>
                 </li>
             </ul>
         </nav>
@@ -43,13 +44,13 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 100px;
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     ul {
-        display:flex;
+        display: flex;
         gap: 1.5rem;
 
         a {
@@ -57,12 +58,13 @@ header {
             line-height: 100px;
             color: black;
             font-weight: 600;
-            &.active, &:hover {
+
+            &.active,
+            &:hover {
                 color: dodgerblue;
                 border-bottom: 4px solid currentColor;
             }
         }
     }
 }
-
 </style>
