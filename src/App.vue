@@ -4,6 +4,8 @@ import AppHeader from './components/AppHeader.vue'
 
 import AppMain from './components/AppMain.vue'
 
+import AppBannerIcons from './components/AppBannerIcons.vue';
+
 import AppFooter from './components/AppFooter.vue'
 
 export default {
@@ -15,6 +17,7 @@ export default {
     components: {
         AppHeader,
         AppMain,
+        AppBannerIcons,
         AppFooter
     }
 }
@@ -25,6 +28,7 @@ export default {
     
     <AppHeader/>
     <AppMain/>
+    <AppBannerIcons/>
     <AppFooter/>
 
 </template>
