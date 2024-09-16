@@ -19,18 +19,41 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="container">
         <img src="../assets/img/dc-logo.png" alt="Logo DC Comics">
         <nav>
             <ul>
                 <li v-for="link in navbarLinks">
-                    <a :href="link.href"> {{ link.text }} </a>
+                    <a :class="{ active: link.active }" :href="link.href"> {{ link.text.toUpperCase() }} </a>
                 </li>
             </ul>
         </nav>
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+header {
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    ul {
+        display:flex;
+        gap: 1.5rem;
+
+        a {
+            display: inline-block;
+            line-height: 100px;
+            color: black;
+            font-weight: 600;
+            &.active, &:hover {
+                color: dodgerblue;
+                border-bottom: 4px solid currentColor;
+            }
+        }
+    }
+}
 
 </style>
