@@ -21,8 +21,4 @@ export default {
     </footer>
 </template>
 
-<style scoped>
-footer {
-    background-color: #303030;
-}
-</style>
+<style scoped></style>

@@ -51,8 +51,6 @@ export default {
 <style lang="scss" scoped>
 .bg-banner-icons {
     background-color: dodgerblue;
-    position: relative;
-    z-index: 2;
 
     .banner-icons {
         display: flex;

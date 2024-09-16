@@ -81,14 +81,12 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-
+    z-index: -1;
     padding: 3rem 0;
 
     img {
         position: absolute;
-        z-index: 1;
-
-        top: -50px;
+        top: -15%;
         right: 30px;
 
         max-height: 600px;
@@ -98,11 +96,8 @@ export default {
         max-width: 60%;
         height: 350px;
         display: flex;
-
         flex-direction: column;
         flex-wrap: wrap;
-
-
 
         ul {
 

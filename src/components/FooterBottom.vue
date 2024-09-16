@@ -38,13 +38,15 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="footer-bottom">
-            <button type="button">SIGN-UP NOW!</button>
-            <div class="social">
-                <h3>FOLLOW US</h3>
-                <img v-for="image in images" :src="getImagePath(`../assets/img/footer-${image.imageUrl}.png`)"
-                    :alt="image.alt">
+    <div class="bg-footer-bottom">
+        <div class="container">
+            <div class="footer-bottom">
+                <button type="button">SIGN-UP NOW!</button>
+                <div class="social">
+                    <h3>FOLLOW US</h3>
+                    <img v-for="image in images" :src="getImagePath(`../assets/img/footer-${image.imageUrl}.png`)"
+                        :alt="image.alt">
+                </div>
             </div>
         </div>
     </div>
@@ -52,9 +54,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container {
-    /* position: relative;
-    z-index: 2; */
+.bg-footer-bottom {
+    background-color: #303030;
 
     .footer-bottom {
         height: 80px;
