@@ -1,5 +1,6 @@
 <script>
 import FooterLinks from './FooterLinks.vue';
+import FooterBottom from './FooterBottom.vue';
 export default {
     data() {
         return {
@@ -8,6 +9,7 @@ export default {
     },
     components: {
         FooterLinks,
+        FooterBottom
     }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
 <template>
     <footer>
         <FooterLinks/>
+        <FooterBottom/>
     </footer>
 </template>
 
