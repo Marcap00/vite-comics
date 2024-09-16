@@ -57,18 +57,52 @@ export default {
 </script>
 
 <template>
-    
-        <ul v-for="(list, index) in footerLists" >
-            <li>
-                {{ list.title }} 
-            </li>
-            <li v-for="link in footerLists[index].links">
-                <a :href="link.href"> {{ link.text }} </a>
-            </li>
-        </ul>
-    
+    <div class="bg-image">
+        <div class="container">
+            <div class="wrapper-lists">
+                <ul v-for="(list, index) in footerLists" >
+                    <li class="title">
+                        {{ list.title }} 
+                    </li>
+                    <li v-for="link in footerLists[index].links">
+                        <a :href="link.href"> {{ link.text }} </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    .bg-image {
+        background-image: url('../assets/img/footer-bg.jpg');
+        background-size: cover;
+        .wrapper-lists {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 3rem 0;
+            margin: 0 -1rem;
+            ul {
+                padding: 0 1rem;
+                width: calc(100% / 3);
+                li.title {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 1.5em;
+                    margin: 1rem 0;
+                }
+                li {
+                    margin: .3rem 0;
+                    a {
+                        color: #6b6b6b;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
 
 </style>
