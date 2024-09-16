@@ -10,12 +10,19 @@ export default {
 
 <template>
     <main>
-        <h1>
-            Main
-        </h1>
+        <div class="container">
+            <h1>
+            --> Content goes here <--
+            </h1>
+        </div>
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+main {
+    background-color: #000;
+    color: #fff;
+    padding: 5rem 0;
+}
 
 </style>
