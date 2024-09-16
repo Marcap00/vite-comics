@@ -1,18 +1,20 @@
 <script>
+import FooterLinks from './FooterLinks.vue';
 export default {
     data() {
         return {
 
         }
+    },
+    components: {
+        FooterLinks,
     }
 }
 </script>
 
 <template>
     <footer>
-        <h2>
-            Footer
-        </h2>
+        <FooterLinks/>
     </footer>
 </template>
 
