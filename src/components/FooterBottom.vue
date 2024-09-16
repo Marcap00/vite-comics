@@ -52,25 +52,32 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.footer-bottom {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+    /* position: relative;
+    z-index: 2; */
 
-    button {
-        background-color: transparent;
-        border: 2px solid dodgerblue;
-        color: #fff;
-        font-weight: 600;
-        padding: .5rem;
-    }
-
-    .social {
-        color: dodgerblue;
+    .footer-bottom {
+        height: 80px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 1rem;
+        padding: 3rem 0;
+
+
+        button {
+            background-color: transparent;
+            border: 2px solid dodgerblue;
+            color: #fff;
+            font-weight: 600;
+            padding: .5rem;
+        }
+
+        .social {
+            color: dodgerblue;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
     }
 }
 </style>

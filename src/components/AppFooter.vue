@@ -16,8 +16,8 @@ export default {
 
 <template>
     <footer>
-        <FooterLinks/>
-        <FooterBottom/>
+        <FooterLinks />
+        <FooterBottom />
     </footer>
 </template>
 
@@ -25,5 +25,4 @@ export default {
 footer {
     background-color: #303030;
 }
-
 </style>

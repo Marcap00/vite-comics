@@ -16,6 +16,14 @@ export default {
                     ]
                 },
                 {
+                    title: 'SHOP',
+                    links: [
+                        { href: '#', text: 'Shop DC', },
+                        { href: '#', text: 'Shop DC Collectibles', },
+
+                    ]
+                },
+                {
                     title: 'DC',
                     links: [
                         { href: '#', text: 'Term Of Use', },
@@ -41,14 +49,6 @@ export default {
                         { href: '#', text: 'DC Power Visa', }
                     ]
                 },
-                {
-                    title: 'SHOP',
-                    links: [
-                        { href: '#', text: 'Shop DC', },
-                        { href: '#', text: 'Shop DC Collectibles', },
-
-                    ]
-                },
             ]
 
         }
@@ -58,17 +58,17 @@ export default {
 
 <template>
     <div class="bg-image">
+        <img src="../assets/img/dc-logo-bg.png" alt="">
         <div class="container">
             <div class="wrapper-lists">
                 <ul v-for="(list, index) in footerLists">
                     <li class="title">
-                        {{ list.title }}
+                        {{ list.title.toUpperCase() }}
                     </li>
                     <li v-for="link in footerLists[index].links">
                         <a :href="link.href"> {{ link.text }} </a>
                     </li>
                 </ul>
-                <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
     </div>
@@ -82,24 +82,32 @@ export default {
     background-repeat: no-repeat;
     position: relative;
 
+    padding: 3rem 0;
+
+    img {
+        position: absolute;
+        z-index: 1;
+
+        top: -50px;
+        right: 30px;
+
+        max-height: 600px;
+    }
+
     .wrapper-lists {
-        max-width: 50%;
+        max-width: 60%;
+        height: 350px;
         display: flex;
+
+        flex-direction: column;
         flex-wrap: wrap;
-        padding: 3rem 0;
-        margin: 0 -1rem;
 
-        img {
-            position: absolute;
-            bottom: 0;
-            right: 10%;
 
-            height: 600px;
-        }
 
         ul {
-            padding: 0 1rem;
-            width: calc(100% / 3);
+
+            flex-shrink: 1;
+            width: 200px;
 
             li.title {
                 color: #fff;

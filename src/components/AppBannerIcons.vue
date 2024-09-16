@@ -39,18 +39,20 @@ export default {
         <div class="container">
             <div class="banner-icons">
                 <div v-for="image in imagesBannerIcons" class="banner-icon">
-                    <img  :src="getImagePath(`../assets/img/${image.url}`)" :alt="image.text">
+                    <img :src="getImagePath(`../assets/img/${image.url}`)" :alt="image.text">
                     <p>{{ image.text }}</p>
                 </div>
             </div>
         </div>
     </div>
-    
+
 </template>
 
 <style lang="scss" scoped>
 .bg-banner-icons {
     background-color: dodgerblue;
+    position: relative;
+    z-index: 2;
 
     .banner-icons {
         display: flex;
@@ -71,5 +73,4 @@ export default {
         }
     }
 }
-
 </style>
