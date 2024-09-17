@@ -90,28 +90,31 @@ export default {
 <template>
     <div class="bg-main">
         <div class="container">
-            <h3>CURRENT SERIES</h3>
-            <div class="list-cards row row-cols-6">
+            <div class="list-cards">
+                <h3>CURRENT SERIES</h3>
+                <div class="row row-cols">
 
-                <CardsItem v-for="(comicCard, index) in comicsCards" :key="index" :thumbUrl="comicCard.thumb"
-                    :price="comicCard.price" :titleSeries="comicCard.series" :type="comicCard.type" />
+                    <CardsItem v-for="(comicCard, index) in comicsCards" :key="index" :thumbUrl="comicCard.thumb"
+                        :price="comicCard.price" :titleSeries="comicCard.series" :type="comicCard.type" />
 
+                </div>
+                <button type="button">LOAD MORE</button>
             </div>
-            <button type="button">LOAD MORE</button>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+.container {
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+    padding: 3rem 15px 0 15px;
+}
+
 .bg-main {
     background-color: #1C1C1C;
 
-    .container {
-        text-align: center;
-        position: relative;
-        padding-top: 2rem;
-        padding: 3rem 15px 0 15px;
-    }
 
 
     h3,
@@ -135,6 +138,13 @@ export default {
         padding: .5rem 2.5rem;
         margin: 1rem 0;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .row.row-cols>* {
+        flex-basis: 25%;
     }
 }
 </style>
