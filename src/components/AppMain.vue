@@ -1,26 +1,25 @@
 <script>
+import MainHero from './MainHero.vue';
+import MainCards from './MainCards.vue';
+
 export default {
     data() {
         return {
 
         }
+    },
+    components: {
+        MainHero,
+        MainCards
     }
 }
 </script>
 
 <template>
     <main>
-        <div class="container">
-            <h1>
-                --> Content goes here <-- </h1>
-        </div>
+        <MainHero />
+        <MainCards />
     </main>
 </template>
 
-<style lang="scss" scoped>
-main {
-    background-color: #000;
-    color: #fff;
-    padding: 5rem 0;
-}
-</style>
+<style lang="scss" scoped></style>
