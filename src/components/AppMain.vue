@@ -1,6 +1,6 @@
 <script>
 import MainHero from './MainHero.vue';
-import MainCards from './MainCards.vue';
+import MainListCards from './MainListCards.vue';
 
 export default {
     data() {
@@ -10,7 +10,7 @@ export default {
     },
     components: {
         MainHero,
-        MainCards
+        MainListCards
     }
 }
 </script>
@@ -18,7 +18,7 @@ export default {
 <template>
     <main>
         <MainHero />
-        <MainCards />
+        <MainListCards />
     </main>
 </template>
 

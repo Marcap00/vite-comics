@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <h2>Cards</h2>
+    <h2>Card</h2>
 </template>
 
 <style lang="scss" scoped></style>
