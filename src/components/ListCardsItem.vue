@@ -70,7 +70,7 @@ export default {
 @media screen and (max-width: 1080px) {
 
     .card {
-        margin-left: 15px;
+        margin-left: 25px;
     }
 }
 </style>

@@ -86,7 +86,7 @@ export default {
 
     img {
         position: absolute;
-        top: -15%;
+        top: -10%;
         right: 30px;
 
         max-height: 600px;
@@ -94,7 +94,7 @@ export default {
 
     .wrapper-lists {
         max-width: 60%;
-        height: 350px;
+        height: 380px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

@@ -71,4 +71,28 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 1080px) {
+
+    .banner-icon {
+        img {
+            max-width: 40px;
+            height: 40px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .banner-icon {
+
+        p {
+            margin-right: 20px;
+        }
+    }
+}
 </style>
