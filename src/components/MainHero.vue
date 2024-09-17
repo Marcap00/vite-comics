@@ -9,7 +9,14 @@ export default {
 </script>
 
 <template>
-    <h2>Hero</h2>
+    <div class="bg-hero"></div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.bg-hero {
+    background-image: url('../assets/img/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+}
+</style>
